@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="/images/logo1.ong.png" alt="Company Logo">
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#track">Track Your Shipment</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="menu-icon" id="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+   
+
+    <!-- Image Slider -->
+    <section class="slider" id="home">
+        <div class="slides">
+            <div class="slide">
+                <img src="/images/Shipping-slid.jpg" alt="Slide 1">
+                <div class="label">Logistics Services</div>
+            </div>
+            <div class="slide">
+                <img src="/images/warehousing -slid.jpg" alt="Slide 2">
+                <div class="label">warehousing Services</div>
+            </div>
+            <div class="slide">
+                <img src="/images/Door Delivery-Slid.jpg" alt="Slide 3">
+                <div class="label">Express Services</div>
+                <!-- <div class="labe2">Full Trauck Services</div>
+                <div class="labe3">Part Truck Services</div> -->
+            </div>
+        </div>
+        <div class="controls">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- Tracking Form -->
+    <section class="tracking-form" id="track">
+        <h2>Track Your Shipment</h2>
+        <form id="trackingForm">
+            <input type="text" id="awbNumber" placeholder="Enter AWB Number" required>
+            <button type="submit">Track</button>
+        </form>
+        <div id="trackingResult"></div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="/images/transport-card.jpg" alt="Service 1 Image">
+                <h3>Transport Service</h3>
+                <p>FTL & PTL Services</p>
+            </div>
+            <div class="card">
+                <img src="/images/warehouse-card.jpg" alt="Service 2 Image">
+                <h3>Warehouse Services</h3>
+                <p>Provide warehouse solutions</p>
+            </div>
+            <div class="card">
+                <img src="/images/Customise-card.jpg" alt="Service 3 Image">
+                <h3>Customise Services</h3>
+                <p>Always customer support services</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section class="contact-us" id="contact">
+        <h2>Contact Us</h2>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?..."
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tej Express . All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
